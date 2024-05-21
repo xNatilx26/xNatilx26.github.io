@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputer od podstaw</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function wyswietlbudowa(){
+            var iframe = document.getElementById("content");
+            iframe.src = "budowa.html";
+        }
+
+        function wyswietlporownanie(){
+            var iframe = document.getElementById("content");
+            iframe.src = "porownanie.html";
+        }
+
+        function wyswietlinfo(){
+            var iframe = document.getElementById("content");
+            iframe.src = "informacje.html";
+        }
+
+        function wyswietlprocesor(){
+            var iframe = document.getElementById("content");
+            iframe.src = "procesor.html";
+        }
+    </script>
+</head>
+<body class="flexbox">
+    <nav>
+        <ul>
+            <li><a onclick="wyswietlbudowa()">Budowa Komputera</a>
+                <li><a onclick="wyswietprocesor()">Procesor (CPU)</a></li>
+            </li>
+            <li><a onclick="wyswietlporownanie()">Porównanie różnych typów podzespołów</a></li>
+            <li><a onclick="wyswietlinfo()">Informacje dla kupującego</a></li>
+        </ul>
+    </nav>
+    <iframe src="" frameborder="0" id="content"></iframe>
+</body>
+</html>

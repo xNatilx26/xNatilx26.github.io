@@ -1,6 +1,25 @@
 body{
     text-align: center;
+    background-color: rgb(25, 43, 58);
+    color: wheat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body.flexbox{
+    display: flex;
+    align-items: stretch;
+}
+body.flexbox nav{
+    flex: 1;
+    justify-content: space-between;
+    height: 100%;
+}
+body.flexbox iframe{
+    flex: 4;
+    height: 100%;
 }
 .budowa{
     display: flex;
+}
+a{
+    color: whitesmoke;
 }
