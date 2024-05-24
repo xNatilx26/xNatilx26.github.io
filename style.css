@@ -13,6 +13,8 @@ body.flexbox nav{
     flex: 1;
     justify-content: space-between;
     height: 100%;
+    text-align: left;
+    background-color: rgb(35, 53, 68);
 }
 body.flexbox iframe{
     flex: 4;
@@ -23,4 +25,17 @@ body.flexbox iframe{
 }
 a{
     color: whitesmoke;
+}
+body.flexbox nav ol ul{
+    font-size: small;
+}
+section ol{
+    text-align: justify;
+    list-style-position: inside;
+}
+p{
+    text-align: justify;
+}
+.noscroll{
+    overflow: hidden;
 }

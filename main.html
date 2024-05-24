@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" style="height: 100%;">
+<html lang="pl" style="height: 100%;" class="noscroll">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,17 +49,27 @@
 </head>
 <body class="flexbox">
     <nav>
-        <ul>
-            <li><a onclick="wyswietlbudowa()">Budowa Komputera</a></li>
-            <li><a onclick="wyswietlprocesor()">Procesor (CPU)</a></li>
-            <li><a onclick="wyswietlRAM()">Pamięć RAM</a></li>
-            <li><a onclick="wyswietldyski()">Dysk Twardy</a></li>
-            <li><a onclick="wyswietlkarta()">Karta Graficzna</a></li>
-            <li><a onclick="wyswietlplyta()">Płyta Główna</a></li>
-            <li><a onclick="wyswietlzasilacz()">Zasilacz</a></li>
-            <li><a onclick="wyswietlporownanie()">Porównanie różnych typów podzespołów</a></li>
-        </ul>
+        <ol>
+            <li><a href="javascript:void(0);" onclick="wyswietlbudowa()">Budowa Komputera</a></li>
+            <ul>
+            <li><a href="javascript:void(0);" onclick="wyswietlprocesor()">Procesor (CPU)</a></li>
+            <li><a href="javascript:void(0);" onclick="wyswietlRAM()">Pamięć RAM</a></li>
+            <li><a href="javascript:void(0);" onclick="wyswietldyski()">Dysk Twardy</a></li>
+            <li><a href="javascript:void(0);" onclick="wyswietlkarta()">Karta Graficzna</a></li>
+            <li><a href="javascript:void(0);" onclick="wyswietlplyta()">Płyta Główna</a></li>
+            <li><a href="javascript:void(0);" onclick="wyswietlzasilacz()">Zasilacz</a></li>
+            </ul><br>
+            <li><a href="javascript:void(0);" onclick="wyswietlporownanie()">Porównanie różnych typów podzespołów</a></li>
+            <ul>
+                <li><a href="javascript:void(0);">Procesor (CPU) AMD vs Intel</a></li>
+                <li><a href="javascript:void(0);">Pamięć RAM GOODRAM vs CORSAIR</a></li>
+                <li><a href="javascript:void(0);">Dysk SSD vs HDD</a></li>
+                <li><a href="javascript:void(0);">Karta graficzna AMD vs NVIDIA</a></li>
+                <li><a href="javascript:void(0);">Płyta główna ASUS vs MSI</a></li>
+            </ul><br>
+            <li><a href="javascript:void(0);">Informacje dla kupującego</a></li>
+        </ol>
     </nav>
-    <iframe src="" frameborder="0" id="content"></iframe>
+    <iframe src="budowa.html" frameborder="0" id="content"></iframe>
 </body>
 </html>
