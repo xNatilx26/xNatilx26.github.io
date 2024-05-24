@@ -25,16 +25,39 @@
             var iframe = document.getElementById("content");
             iframe.src = "procesor.html";
         }
+        function wyswietlRAM(){
+            var iframe = document.getElementById("content");
+            iframe.src = "pamiecRAM.html";
+        }
+        function wyswietldyski(){
+            var iframe = document.getElementById("content");
+            iframe.src = "dyski.html";
+        }
+        function wyswietlkarta(){
+            var iframe = document.getElementById("content");
+            iframe.src = "karta_graficzna.html";
+        }
+        function wyswietlplyta(){
+            var iframe = document.getElementById("content");
+            iframe.src = "plyta_glowna.html";
+        }
+        function wyswietlzasilacz(){
+            var iframe = document.getElementById("content");
+            iframe.src = "zasilacz.html";
+        }
     </script>
 </head>
 <body class="flexbox">
     <nav>
         <ul>
-            <li><a onclick="wyswietlbudowa()">Budowa Komputera</a>
-                <li><a onclick="wyswietprocesor()">Procesor (CPU)</a></li>
-            </li>
+            <li><a onclick="wyswietlbudowa()">Budowa Komputera</a></li>
+            <li><a onclick="wyswietlprocesor()">Procesor (CPU)</a></li>
+            <li><a onclick="wyswietlRAM()">Pamięć RAM</a></li>
+            <li><a onclick="wyswietldyski()">Dysk Twardy</a></li>
+            <li><a onclick="wyswietlkarta()">Karta Graficzna</a></li>
+            <li><a onclick="wyswietlplyta()">Płyta Główna</a></li>
+            <li><a onclick="wyswietlzasilacz()">Zasilacz</a></li>
             <li><a onclick="wyswietlporownanie()">Porównanie różnych typów podzespołów</a></li>
-            <li><a onclick="wyswietlinfo()">Informacje dla kupującego</a></li>
         </ul>
     </nav>
     <iframe src="" frameborder="0" id="content"></iframe>

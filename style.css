@@ -7,6 +7,7 @@ body{
 body.flexbox{
     display: flex;
     align-items: stretch;
+    height: 100%;
 }
 body.flexbox nav{
     flex: 1;
