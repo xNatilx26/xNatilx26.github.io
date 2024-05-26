@@ -45,6 +45,27 @@
             var iframe = document.getElementById("content");
             iframe.src = "zasilacz.html";
         }
+        function wyswietlamdvsintel(){
+            var iframe = document.getElementById("content");
+            iframe.src = "amdvsintel.html";
+        }
+        function wyswietlGoodramvsCORSAIR(){
+            var iframe = document.getElementById("content");
+            iframe.src = "GoodramvsCORSAIR.html";
+        }
+        function wyswietlSSDvsHDD(){
+            var iframe = document.getElementById("content");
+            iframe.src = "SSDvsHDD.html";
+        }
+        function wyswietlAMDvsNVIDIA(){
+            var iframe = document.getElementById("content");
+            iframe.src = "AMDvsNVIDIA.html";
+        }
+        function wyswietlASUSvsMSI(){
+            var iframe = document.getElementById("content");
+            iframe.src = "ASUSvsMSI.html";
+        }
+        
     </script>
 </head>
 <body class="flexbox">
@@ -61,13 +82,13 @@
             </ul><br>
             <li><a href="javascript:void(0);" onclick="wyswietlporownanie()">Porównanie różnych typów podzespołów</a></li>
             <ul>
-                <li><a href="javascript:void(0);">Procesor (CPU) AMD vs Intel</a></li>
-                <li><a href="javascript:void(0);">Pamięć RAM GOODRAM vs CORSAIR</a></li>
-                <li><a href="javascript:void(0);">Dysk SSD vs HDD</a></li>
-                <li><a href="javascript:void(0);">Karta graficzna AMD vs NVIDIA</a></li>
-                <li><a href="javascript:void(0);">Płyta główna ASUS vs MSI</a></li>
+                <li><a href="javascript:void(0);" onclick="wyswietlamdvsintel()">Procesor (CPU) AMD vs Intel</a></li>
+                <li><a href="javascript:void(0);" onclick="wyswietlGoodramvsCORSAIR()">Pamięć RAM GOODRAM vs CORSAIR</a></li>
+                <li><a href="javascript:void(0);" onclick="wyswietlSSDvsHDD()">Dysk SSD vs HDD</a></li>
+                <li><a href="javascript:void(0);" onclick="wyswietlAMDvsNVIDIA()">Karta graficzna AMD vs NVIDIA</a></li>
+                <li><a href="javascript:void(0);" onclick="wyswietlASUSvsMSI()">Płyta główna ASUS vs MSI</a></li>
             </ul><br>
-            <li><a href="javascript:void(0);">Informacje dla kupującego</a></li>
+            <li><a href="javascript:void(0);" onclick="wyswietlinfo()">Informacje dla kupującego</a></li>
         </ol>
     </nav>
     <iframe src="budowa.html" frameborder="0" id="content"></iframe>
